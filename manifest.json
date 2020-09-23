@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "noty",
+    "description": "Notifications template plugin",
+    "version": "1.0.0",
+    "author": "Rony",
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": [
+            "js/index.js"
+        ]
+    }],
+    "icons": {
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Have a good day",
+        "default_popup": "popup.html"
+    }
+}
